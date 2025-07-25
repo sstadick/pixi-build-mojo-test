@@ -14,3 +14,7 @@ pixi build
 # Places the conda build in the ./target dir
 pixi run b
 ```
+
+## Issues
+
+Deps don't seem to be available in the build script. Specifically ExtraMojo in this case. It gets isntalled, but not in a place that is exported or visible from within the build dir. I do see all the max mojopkgs though. 
