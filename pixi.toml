@@ -1,0 +1,28 @@
+[workspace]
+authors = ["Seth Stadick <sstadick@gmail.com>"]
+platforms = ["linux-64"]
+preview = ["pixi-build"]
+channels = ["https://conda.modular.com/max-nightly", "conda-forge", "https://prefix.dev/pixi-build-backends"]
+
+[package]
+name = "greetings"
+version = "0.1.0"
+
+[package.build]
+backend = { name = "pixi-build-mojo", version = "0.1.*" }
+
+[tasks]
+b  = "pixi build --output-dir ./target"
+
+[[package.build.configuration.bins]]
+name = "greet"
+path = "./main.mojo"
+extra-args = ["-I", "."]
+
+[package.build.configuration.pkg]
+name = "greetings"
+path = "greetings"
+
+
+[dependencies]
+max = ">=25.5.0.dev2025072405,<26"
