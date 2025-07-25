@@ -17,4 +17,6 @@ pixi run b
 
 ## Issues
 
-Deps don't seem to be available in the build script. Specifically ExtraMojo in this case. It gets isntalled, but not in a place that is exported or visible from within the build dir. I do see all the max mojopkgs though. 
+- Over specifying deps, need to figure out what goes in host vs build
+- Test out installing the built conda package
+- Can git paths be used?

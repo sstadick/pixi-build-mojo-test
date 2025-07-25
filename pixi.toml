@@ -24,9 +24,17 @@ name = "greetings"
 path = "greetings"
 
 [package.host-dependencies]
+# TODO: I don't think these are all needed, maybe just max
 max = "=25.4.0"
+small_time = ">=25.4.1,<26"
+extramojo = ">=0.16.0,<0.17"
+
+[package.build-dependencies]
+max = "=25.4.0"
+small_time = ">=25.4.1,<26"
 extramojo = ">=0.16.0,<0.17"
 
 [dependencies]
-#max = "=25.4.0"
-#extramojo = ">=0.16.0,<0.17"
+max = "=25.4.0"
+extramojo = ">=0.16.0,<0.17"
+small_time = ">=25.4.1,<26"
