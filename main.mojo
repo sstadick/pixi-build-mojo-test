@@ -11,5 +11,4 @@ def main():
     )
     var opts = parser.parse_sys_args()
     print(now())
-    print("yo")
     print(greet(opts.get_string("name")))

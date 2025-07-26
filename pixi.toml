@@ -17,6 +17,7 @@ b = "pixi build --output-dir ./target"
 [package.build.configuration]
 # This is entirey optional. pixi install is recommended
 dist-dir = "./target"
+env = { "TEST" = "FOUND" }
 
 [[package.build.configuration.bins]]
 name = "greet"
@@ -42,4 +43,7 @@ extramojo = ">=0.16.0,<0.17"
 max = "=25.4.0"
 
 [dependencies]
+max = "=25.4.0"
+small_time = ">=25.4.1,<26"
+extramojo = ">=0.16.0,<0.17"
 greetings = { path = "." }
