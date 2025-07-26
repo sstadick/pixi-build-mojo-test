@@ -71,6 +71,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zeromq-4.3.5-h3b0a872_7.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.23.0-pyhd8ed1ab_0.conda
+      - conda: .
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
   sha256: fe51de6107f9edc7aa4f786a70f4a883943bc9d39b3bb7307c04c41410990726
@@ -145,6 +146,14 @@ packages:
   license: Unlicense OR MIT
   size: 1476911
   timestamp: 1750864945602
+- conda: .
+  name: greetings
+  version: 0.1.0
+  build: hbf21a9e_0
+  subdir: linux-64
+  input:
+    hash: b489441743c6d5f381724a78ed6b5e04c9a6e2486e0d8f33fd96ee34078403bb
+    globs: []
 - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
   sha256: 71e750d509f5fa3421087ba88ef9a7b9be11c53174af3aa4d06aff4c18b38e8e
   md5: 8b189310083baabfb622af68fd9d3ae3

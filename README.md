@@ -8,11 +8,11 @@ Docs on override here: https://pixi.sh/dev/build/backends/#overriding-the-build-
 ## Build
 
 ```
-# Places the conda build in your working dir
-pixi build
-# or
-# Places the conda build in the ./target dir
-pixi run b
+# Install the tooling into your env provided you've added this package to pixi.toml dependencies
+pixi install
+# or, to create a conda env
+pixi build 
+# Also note you can specify a dist dir in the config to copy binaries there
 ```
 
 ## Issues

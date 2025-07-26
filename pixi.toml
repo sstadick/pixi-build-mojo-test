@@ -14,6 +14,9 @@ backend = { name = "pixi-build-mojo", version = "0.1.*" }
 [tasks]
 b = "pixi build --output-dir ./target"
 
+[package.build.configuration]
+dist-dir = "./target"
+
 [[package.build.configuration.bins]]
 name = "greet"
 path = "./main.mojo"
@@ -38,3 +41,4 @@ extramojo = ">=0.16.0,<0.17"
 max = "=25.4.0"
 extramojo = ">=0.16.0,<0.17"
 small_time = ">=25.4.1,<26"
+greetings = { path = "." }
