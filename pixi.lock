@@ -15,7 +15,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/click-8.2.1-pyh707e725_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/colorama-0.4.6-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/cpython-3.13.5-py313hd8ed1ab_102.conda
-      - conda: https://repo.prefix.dev/modular-community/linux-64/extramojo-0.16.0-h6f44653_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-8.7.0-pyhe01879c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_client-8.6.3-pyhd8ed1ab_1.conda
@@ -62,7 +61,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pyzmq-27.0.0-py313h8e95178_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/six-1.17.0-pyhe01879c_1.conda
-      - conda: https://repo.prefix.dev/modular-community/linux-64/small_time-25.4.1-h6f44653_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tornado-6.5.1-py313h536fd9c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/tqdm-4.67.1-pyhd8ed1ab_1.conda
@@ -139,20 +137,15 @@ packages:
   license: Python-2.0
   size: 47560
   timestamp: 1750062514868
-- conda: https://repo.prefix.dev/modular-community/linux-64/extramojo-0.16.0-h6f44653_0.conda
-  sha256: fbd7a31a66f9170a2decda34421081918d53619196b4de9a30d07dbbcd2793a0
-  depends:
-  - max 25.4.*
-  license: Unlicense OR MIT
-  size: 1476911
-  timestamp: 1750864945602
 - conda: .
   name: greetings
   version: 0.1.0
   build: hbf21a9e_0
   subdir: linux-64
+  depends:
+  - max
   input:
-    hash: b489441743c6d5f381724a78ed6b5e04c9a6e2486e0d8f33fd96ee34078403bb
+    hash: 518feeb48380ebf858c71caecdda8cc05949818294c19de737464833a037d25c
     globs: []
 - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
   sha256: 71e750d509f5fa3421087ba88ef9a7b9be11c53174af3aa4d06aff4c18b38e8e
@@ -725,13 +718,6 @@ packages:
   license_family: MIT
   size: 18455
   timestamp: 1753199211006
-- conda: https://repo.prefix.dev/modular-community/linux-64/small_time-25.4.1-h6f44653_0.conda
-  sha256: 9fcc34fbaa748a90f0cafe556a216ed5d1ee787d8c57188d96ee5e8b48a888a2
-  depends:
-  - max >=25.4.0,<26.0a0
-  license: Apache-2.0
-  size: 1444111
-  timestamp: 1752589279751
 - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
   sha256: a84ff687119e6d8752346d1d408d5cf360dee0badd487a472aa8ddedfdc219e1
   md5: a0116df4f4ed05c303811a837d5b39d8

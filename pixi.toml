@@ -15,30 +15,31 @@ backend = { name = "pixi-build-mojo", version = "0.1.*" }
 b = "pixi build --output-dir ./target"
 
 [package.build.configuration]
+# This is entirey optional. pixi install is recommended
 dist-dir = "./target"
 
 [[package.build.configuration.bins]]
 name = "greet"
 path = "./main.mojo"
-extra_args = ["-I", "."]
+#extra-args = ["-I", "."]
+#extra-input_globs = ["**/.c"]
 
 [package.build.configuration.pkg]
 name = "greetings"
 path = "greetings"
+#extra-args = ["-I", "."]
+#extra-input_globs = ["**/.c"]
 
 [package.host-dependencies]
-# TODO: I don't think these are all needed, maybe just max
 max = "=25.4.0"
-small_time = ">=25.4.1,<26"
-extramojo = ">=0.16.0,<0.17"
 
 [package.build-dependencies]
 max = "=25.4.0"
 small_time = ">=25.4.1,<26"
 extramojo = ">=0.16.0,<0.17"
 
-[dependencies]
+[package.run-dependencies]
 max = "=25.4.0"
-extramojo = ">=0.16.0,<0.17"
-small_time = ">=25.4.1,<26"
+
+[dependencies]
 greetings = { path = "." }
