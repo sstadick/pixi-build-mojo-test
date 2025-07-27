@@ -14,20 +14,20 @@ backend = { name = "pixi-build-mojo", version = "0.1.*" }
 [tasks]
 b = "pixi build --output-dir ./target"
 
-[package.build.configuration]
+#[package.build.configuration]
 # This is entirey optional. pixi install is recommended
-dist-dir = "./target"
-env = { "TEST" = "FOUND" }
+#dist-dir = "./target"
+#env = { "TEST" = "FOUND" }
 
-[[package.build.configuration.bins]]
-name = "greet"
-path = "./main.mojo"
+#[[package.build.configuration.bins]]
+#name = "greet"
+#path = "./main.mojo"
 #extra-args = ["-I", "."]
 #extra-input_globs = ["**/.c"]
 
 [package.build.configuration.pkg]
 name = "greetings"
-path = "greetings"
+#path = "greetings"
 #extra-args = ["-I", "."]
 #extra-input_globs = ["**/.c"]
 
