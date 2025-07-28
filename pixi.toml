@@ -33,8 +33,8 @@ backend = { name = "pixi-build-mojo", version = "0.1.*" }
 #extra-args = ["-I", "."]
 #extra-input_globs = ["**/.c"]
 
-#[package.build.configuration.pkg]
-#name = "greetings"
+[package.build.configuration.pkg]
+name = "greetings"
 #path = "greetings"
 #extra-args = ["-I", "."]
 #extra-input_globs = ["**/.c"]
@@ -51,7 +51,9 @@ extramojo = ">=0.16.0,<0.17"
 max = "=25.4.0"
 
 [dependencies]
+# These deps are needed for local development, mojo test, language server, etc
 max = "=25.4.0"
 small_time = ">=25.4.1,<26"
 extramojo = ">=0.16.0,<0.17"
+# Need for pixi install
 greetings = { path = "." }
