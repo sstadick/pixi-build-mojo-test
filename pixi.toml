@@ -46,6 +46,7 @@ max = "=25.4.0"
 max = "=25.4.0"
 small_time = ">=25.4.1,<26"
 extramojo = ">=0.16.0,<0.17"
+#extramojo = { git = "https://github.com/ExtraMojo/ExtraMojo.git" }
 
 [package.run-dependencies]
 max = "=25.4.0"
@@ -55,5 +56,6 @@ max = "=25.4.0"
 max = "=25.4.0"
 small_time = ">=25.4.1,<26"
 extramojo = ">=0.16.0,<0.17"
+#extramojo = { git = "https://github.com/ExtraMojo/ExtraMojo.git" }
 # Need for pixi install
 greetings = { path = "." }
