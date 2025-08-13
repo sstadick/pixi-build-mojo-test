@@ -4,9 +4,8 @@ platforms = ["linux-64"]
 preview = ["pixi-build"]
 channels = [
     "https://conda.modular.com/max-nightly",
-    "conda-forge",
-    "https://prefix.dev/pixi-build-backends",
-    "https://repo.prefix.dev/modular-community"
+    "https://prefix.dev/conda-forge",
+    "https://prefix.dev/modular-community"
 ]
 
 [package]
@@ -14,7 +13,11 @@ name = "greetings"
 version = "0.1.0"
 
 [package.build]
-backend = { name = "pixi-build-mojo", version = "0.1.*" }
+backend = { name = "pixi-build-mojo", version = "0.*" }
+channels = [
+    "https://prefix.dev/pixi-build-backends",
+    "https://prefix.dev/conda-forge",
+]
 
 [tasks]
 
